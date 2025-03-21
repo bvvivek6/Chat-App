@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=DM+Sans:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Poppins", "DM Sans", sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Login Container */
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+/* Logo */
+.logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Login Form */
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.loginForm h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Input Fields */
+.form-input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #007bff;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.login-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Terms & Conditions */
+.login-term {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.login-term input {
+  cursor: pointer;
+}
+
+.login-term p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Forgot Password & Toggle */
+.login-forgot {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-toggle {
+  font-size: 14px;
+  color: #666;
+}
+
+.login-toggle span {
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-toggle span:hover {
+  text-decoration: underline;
+}

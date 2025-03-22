@@ -1,0 +1,129 @@
+.chat-box {
+  height: 80vh;
+  width: 600px;
+  background-color: #222;
+  color: #fff;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+.chat-msg::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-msg::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 10px;
+}
+
+.chat-msg::-webkit-scrollbar-track {
+  background: transparent;
+}
+.chat-user {
+  padding: 10px 25px;
+  display: flex;
+
+  align-items: center;
+  gap: 10px;
+}
+.chat-user img {
+  width: 25px;
+  border-radius: 50%;
+}
+.chat-user img:first-child {
+  width: 38px;
+  aspect-ratio: 1/1;
+}
+
+.chat-user p {
+  flex: 1;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.chat-input {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #17171784; /* Dark background */
+  backdrop-filter: blur(10px);
+}
+.chat-input input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: none;
+
+  border-radius: 25px;
+  background-color: #2f2f2f;
+  color: #bababa;
+  font-size: 1rem;
+  transition: 0.2s ease-in-out;
+}
+.chat-input label img,
+.chat-input img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.chat-input img:hover {
+  transform: scale(1.1);
+}
+.chat-msg {
+  height: calc(100% - 75px);
+  padding-bottom: 50px;
+  overflow-y: scroll;
+  display: flex;
+  scrollbar-width: thin;
+  scrollbar-color: #333333 #00000000;
+  flex-direction: column-reverse;
+}
+.s-msg div img,
+.r-msg div img {
+  width: 24px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.s-msg,
+.r-msg {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: 5px;
+  padding: 0px 25px;
+}
+.r-msg {
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+.msg {
+  color: #fff;
+  padding: 10px;
+  max-width: 200px;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  border-radius: 10px 10px 0 10px;
+}
+.r-msg .msg {
+  background: #333;
+  border-radius: 10px 10px 10px 0;
+}
+.s-msg div,
+.r-msg div {
+  text-align: center;
+  font-size: 10px;
+}
+.msg-img {
+  max-width: 300px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+}

@@ -1,7 +1,7 @@
 .chat-box {
   height: 80vh;
   width: 600px;
-  background-color: #222;
+  background-color: #1b1b1b;
   color: #fff;
   position: relative;
   font-family: Arial, sans-serif;
@@ -51,8 +51,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #17171784; /* Dark background */
-  backdrop-filter: blur(10px);
+  background-color: #1b1b1b; /* Dark background */
 }
 .chat-input input {
   flex-grow: 1;

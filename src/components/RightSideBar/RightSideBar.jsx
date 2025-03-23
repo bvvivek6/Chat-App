@@ -5,7 +5,11 @@ import assets from "../../assets/assets";
 const RightSideBar = () => {
   return (
     <div className="rs">
+<<<<<<< HEAD
       <div className="rs-rpofile">
+=======
+      <div className="rs-profile">
+>>>>>>> c00d6ce58353b83eadd0fa5b360499168a00e9a2
         <img src={assets.profile_img} alt="" />
         <h3>
           Vicky

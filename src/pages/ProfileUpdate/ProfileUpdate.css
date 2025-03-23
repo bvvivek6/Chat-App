@@ -1,0 +1,94 @@
+.pr-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: center;
+  border: 1px solid #292929;
+}
+
+h3 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #e0e0e0;
+  font-weight: 600;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #b0b0b0;
+  transition: color 0.3s ease-in-out;
+}
+
+label:hover {
+  color: #ffffff;
+}
+
+label img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+  border: 3px solid #333;
+  padding: 4px;
+  transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+label:hover img {
+  border-color: #007bff;
+  transform: scale(1.05);
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  background-color: #252525;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #d0d0d0;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+textarea {
+  resize: none;
+  height: 140px;
+}
+
+.pr-container button {
+  width: 100%;
+  padding: 0.8rem;
+  background: linear-gradient(135deg, #2ca82c, #1f8b1f);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:active {
+  transform: scale(0.98);
+}
